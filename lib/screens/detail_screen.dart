@@ -111,7 +111,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  // Ürünü global sepete ekliyoruz
+                  
                   cartItems.add(product); 
                   
                   ScaffoldMessenger.of(context).showSnackBar(
