@@ -119,7 +119,7 @@ class DetailScreen extends StatelessWidget {
                       content: Text('${product.name} added to cart!'),
                       behavior: SnackBarBehavior.floating,
                       duration: const Duration(seconds: 2),
-                      backgroundColor: Colors.green, // Başarılı eklendiğini belli edelim
+                      backgroundColor: Colors.green, 
                     ),
                   );
                 },
