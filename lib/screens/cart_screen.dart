@@ -129,7 +129,6 @@ class _CartScreenState extends State<CartScreen> {
                   ),
           ),
           
-          // Alt Kısım: Toplam Fiyat, Açıklama ve Checkout Butonu
           Container(
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
@@ -138,7 +137,7 @@ class _CartScreenState extends State<CartScreen> {
             ),
             child: Column(
               children: [
-                // Toplam Fiyat Göstergesi
+               
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -147,13 +146,13 @@ class _CartScreenState extends State<CartScreen> {
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      '\$${totalPrice.toStringAsFixed(2)}', // Toplam fiyatı yazdırır
+                      '\$${totalPrice.toStringAsFixed(2)}', 
                       style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.blueAccent),
                     ),
                   ],
                 ),
                 const SizedBox(height: 12),
-                // Düzenlenen Açıklama Metni
+                
                 Text(
                   'Siparişinizi tamamlamak ve ürünleri satın almak için Checkout butonuna tıklayın.',
                   style: TextStyle(color: Colors.grey[600], fontSize: 12),
@@ -170,9 +169,9 @@ class _CartScreenState extends State<CartScreen> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    // Eğer sepet boşsa butonu pasif (null) yapıyoruz
+                  
                     onPressed: cartItems.isEmpty ? null : () {
-                      // Checkout yapıldığında sepeti temizliyor ve ekranı güncelliyoruz
+                    
                       setState(() {
                         cartItems.clear(); 
                       });
