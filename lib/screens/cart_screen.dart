@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/product_model.dart'; // Sepet listesine erişmek için modelimizi import ettik
+import '../models/product_model.dart'; 
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -9,12 +9,11 @@ class CartScreen extends StatefulWidget {
 }
 
 class _CartScreenState extends State<CartScreen> {
-  
-  // Sepetteki ürünlerin toplam fiyatını hesaplayan yardımcı metod
+
   double get totalPrice {
     double total = 0;
     for (var item in cartItems) {
-      // Fiyattaki '$' işaretini kaldırıp sayıya çevirerek topluyoruz
+      
       String priceString = item.price.replaceAll('\$', '');
       total += double.tryParse(priceString) ?? 0;
     }
@@ -39,18 +38,18 @@ class _CartScreenState extends State<CartScreen> {
       ),
       body: Column(
         children: [
-          // Sepetteki Ürünler Listesi
+          
           Expanded(
             child: cartItems.isEmpty
                 ? const Center(
                     child: Text(
-                      'Your cart is empty', // Sepet boşsa görünecek yazı
+                      'Your cart is empty', 
                       style: TextStyle(fontSize: 16, color: Colors.grey),
                     ),
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.all(16.0),
-                    itemCount: cartItems.length, // Listede kaç ürün varsa o kadar çizer
+                    itemCount: cartItems.length, 
                     itemBuilder: (context, index) {
                       final product = cartItems[index];
                       return Container(
@@ -70,7 +69,7 @@ class _CartScreenState extends State<CartScreen> {
                         ),
                         child: Row(
                           children: [
-                            // Ürün Görseli
+                            
                             ClipRRect(
                               borderRadius: BorderRadius.circular(8),
                               child: Image.network(
@@ -87,7 +86,7 @@ class _CartScreenState extends State<CartScreen> {
                               ),
                             ),
                             const SizedBox(width: 12),
-                            // Ürün Detayları
+                           
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,11 +112,11 @@ class _CartScreenState extends State<CartScreen> {
                                 ],
                               ),
                             ),
-                            // Sepetten Çıkar İkonu
+                            
                             IconButton(
                               icon: const Icon(Icons.remove_circle_outline, color: Colors.grey),
                               onPressed: () {
-                                // setState ile ekranı güncelleyip ürünü siliyoruz
+                                
                                 setState(() {
                                   cartItems.removeAt(index);
                                 });
