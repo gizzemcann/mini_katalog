@@ -16,8 +16,6 @@ class Product {
   });
 
   factory Product.fromJson(Map<String, dynamic> json) {
-    // Fiyatı güvenli bir şekilde metne çeviriyoruz (.toString())
-    // Eğer fiyatın başında '$' işareti yoksa (sayı olarak gelmişse) otomatik olarak ekliyoruz.
     String rawPrice = json['price']?.toString() ?? '0';
     String finalPrice = rawPrice.startsWith('\$') ? rawPrice : '\$$rawPrice';
 
