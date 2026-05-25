@@ -10,7 +10,7 @@ Bu proje, Flutter eğitimi kapsamında geliştirilmiş temel seviye bir mobil e-
 * **Veri Yönetimi:** Proje verileri, yerel olarak tanımlanmış bir JSON dizisinden (`mockJsonData`) dinamik olarak parse edilerek çekilmektedir. İster `WANTAPI` ister `DummyJSON` veri yapısı gelsin, kurşun geçirmez model yapısı sayesinde uygulama hatasız çalışmaktadır.
 * **State Yönetimi:** Dışarıdan hiçbir üçüncü parti paket (Provider, Bloc vb.) kullanılmadan, tamamen Flutter'ın yerel `setState` mekanizması ile dinamik ürün ekleme, sepetten ürün silme ve sepeti temizleme (Checkout) işlevleri kodlanmıştır.
 
-## Proje Özellikleri (İstenen Kriterler)
+## Proje Özellikleri 
 * **Discover (Ana Sayfa):** Ürünlerin grid yapısında (`GridView.builder`) listelendiği, arama çubuğu ve reklam banner'ı barındıran ana ekran.
 * **Ürün Detay Sayfası:** Seçilen ürüne ait görsel, fiyat, marka ve uzun açıklama metninin gösterildiği, `Navigator` ve `Route Arguments` kullanılarak dinamik yönlendirme yapılan ekran.
 * **Cart (Sepet Sayfası):** Ana sayfadan eklenen ürünlerin listelendiği, anlık toplam fiyat (Total) hesaplayan, ürün silme ve sepeti onaylama özelliklerine sahip `Stateful` ekran.
