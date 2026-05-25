@@ -25,7 +25,6 @@ Uygulamanın sorunsuz çalışması ve sürüm uyumsuzlukları yaşanmaması iç
 1. Projeyi bilgisayarınıza indirin veya terminalden klonlayın.
 2. Terminali açarak proje ana dizinine gidin.
 3. Bağımlılıkları yüklemek için şu komutu çalıştırın:
-
    ```bash
    flutter pub get
 
