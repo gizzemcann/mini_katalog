@@ -5,7 +5,7 @@ Bu proje, Flutter eğitimi kapsamında geliştirilmiş temel seviye bir mobil e-
 
 ## Kullanılan Teknolojiler & Mimari
 * **Dart & Flutter SDK:** * **Flutter Sürümü:** `3.44.0`
-  * **Dart Sürümü:** `^3.11.5` (Dart 3.12.0 dahil güncel sürümleri destekler)
+  * **Dart Sürümü:** `3.11.5` (Dart 3.12.0 dahil güncel sürümleri destekler)
 * **Arayüz (UI):** Sadece `material.dart` bileşenleri kullanılarak modern ve scannable bir tasarım yapılmıştır.
 * **Veri Yönetimi:** Proje verileri, yerel olarak tanımlanmış bir JSON dizisinden (`mockJsonData`) dinamik olarak parse edilerek çekilmektedir. İster `WANTAPI` ister `DummyJSON` veri yapısı gelsin, kurşun geçirmez model yapısı sayesinde uygulama hatasız çalışmaktadır.
 * **State Yönetimi:** Dışarıdan hiçbir üçüncü parti paket (Provider, Bloc vb.) kullanılmadan, tamamen Flutter'ın yerel `setState` mekanizması ile dinamik ürün ekleme, sepetten ürün silme ve sepeti temizleme (Checkout) işlevleri kodlanmıştır.
@@ -17,8 +17,8 @@ Bu proje, Flutter eğitimi kapsamında geliştirilmiş temel seviye bir mobil e-
 
 ## Sistem Gereksinimleri
 Uygulamanın sorunsuz çalışması ve sürüm uyumsuzlukları yaşanmaması için bilgisayarınızda aşağıdaki SDK sürümlerinin yüklü olması önerilir:
-* **Flutter SDK:** `>=3.44.0`
-* **Dart SDK:** `>=3.11.5 <4.0.0`
+* **Flutter SDK:** `3.44.0`
+* **Dart SDK:** `3.11.5 <4.0.0`
 
 ## Çalıştırma Adımları
 1. Projeyi bilgisayarınıza indirin veya terminalden klonlayın.
@@ -27,7 +27,7 @@ Uygulamanın sorunsuz çalışması ve sürüm uyumsuzlukları yaşanmaması iç
 
    ```bash
 
-   flutter pub ge
+   flutter pub get
 
 
 
