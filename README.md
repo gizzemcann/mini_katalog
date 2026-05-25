@@ -26,3 +26,13 @@ Uygulamanın sorunsuz çalışması ve sürüm uyumsuzlukları yaşanmaması iç
 3. Bilgisayarınızdaki Flutter ve Dart sürümünü doğrulamak için (isteğe bağlı):
    ```bash
    flutter --version
+4.Bağımlılıkları yüklemek için şu komutu çalıştırın.
+    ```bash
+    flutter pub get
+
+
+5.Uygulamayı bir emülatör veya gerçek cihazda başlatmak için:
+   ```bash
+    flutter run
+
+
