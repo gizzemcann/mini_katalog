@@ -26,7 +26,6 @@ Uygulamanın sorunsuz çalışması ve sürüm uyumsuzlukları yaşanmaması iç
 3. Bağımlılıkları yüklemek için şu komutu çalıştırın:
 
    ```bash
-
    flutter pub get
 
 
